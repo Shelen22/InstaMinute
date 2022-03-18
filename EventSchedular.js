@@ -10,12 +10,13 @@ function RunFunction(events) {
   events.forEach((e) => {
     let ans = e.text;
     const date = new Date(e.datetime);
-    console.log("This will run at :",date)
+    console.log(ans)
+    console.log("This will run when at", date)
     const scheduletime = schedule.scheduleJob(date, () => {      
       setTimeout(() => {
         let reverseword = ans.split("").reverse().join("");
         ans = reverseword;
-        console.log(ans);
+        console.log("Reverse string :",ans);
       }, ans.length * 1000);
       scheduletime.cancel();
     });
