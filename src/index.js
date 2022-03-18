@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/", schedulecontroller)
 
 const start = async () => {
-  await mongoose.connect(`mongodb://127.0.0.1:27017/schedule`);
+  await mongoose.connect(`mongodb+srv://shailendra:shailendra22@cluster0.djbfv.mongodb.net/eventschedular`);
   app.listen(port, () => {
     console.log("listening on 2244");
   });
