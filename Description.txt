@@ -1,0 +1,11 @@
+# InstaMinute Assignment EventSchedule
+
+# Frameworks/Languages -> I used Nodejs, javascript to Trigger the function and also uses (Express, Mongoose) the backend for new CRUD Operations like POST request for creating the events GET etc.
+ 
+# Approach:-
+- First challenge was to understand the problem statement and figure out how I can Solve.
+- First I decided to do with express & mongoose using Crud operation like first I'll create event then    with get request triggered the event then it will print the output. 
+- So I decided to use Node-Schedular package for triggering the function on given dataTime.
+ 
+# Problem
+- when It's time for deployment 
